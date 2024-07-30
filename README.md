@@ -14,7 +14,7 @@ Una vez realizada su corrección y validación, podremos usar esta función para
         <tr>
             <td width="10%"><a href="./Makefile"><code>Makefile</code></a></td>
             <td width="40%">Archivo de instrucciones para compilar y construir la biblioteca libft.</td>
-            <td width="10%"><a href="./printf.h"><code>ft_printf.h</code></a></td>
+            <td width="10%"><a href="./ft_printf.h"><code>ft_printf.h</code></a></td>
             <td width="40%">El header Archivo incluye las descripciones anticipadas de las funciones y las definiciones esenciales.</td>
         </tr>
     </tbody>
