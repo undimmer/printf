@@ -22,11 +22,10 @@ Una vez realizada su corrección y validación, podremos usar esta función para
 
 ## Lista de funciones utilizadas de proyecto libft
 
-|      Funciones de libft     |
-| :-----------------------------: 
-| [ft_putchar](libft/ft_putchar_fd.c) |
-| [ft_putstr](libft/ft_putstr_fd.c)   |
-| [ft_putnbr](libft/ft_putnbr_fd.c)   |
-| [ft_uputnbr](libft/ft_uputnbr.c)   |
-| [ft_hexa](libft/ft_hexa.c)   |
-| [ft_ptr](libft/ft_ptr.c)   |
+|      Funciones de libft         |      Funciones de libft                    |
+| :-----------------------------: | :-----------------------------:            | 
+| [ft_strlen]                     | Devuelve la longitud de la cadena          |
+| [ft_pf_putchar]                 | Imprime un caracter y aumenta el resultado |
+| [ft_pf_putstr]                  | Imprime una cadena y aumenta el resultado por la longitud de la cadena |
+| [ft_pf_pointer]                 | Convierte un puntero a una cadena hexadecimal y la imprime |               
+
