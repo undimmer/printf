@@ -24,8 +24,8 @@ Una vez realizada su corrección y validación, podremos usar esta función para
 
 |      Funciones de libft         |      Funciones de libft                    |
 | :-----------------------------: | :-----------------------------:            | 
-| [ft_strlen]                     | Devuelve la longitud de la cadena          |
-| [ft_pf_putchar]                 | Imprime un caracter y aumenta el resultado |
-| [ft_pf_putstr]                  | Imprime una cadena y aumenta el resultado por la longitud de la cadena |
-| [ft_pf_pointer]                 | Convierte un puntero a una cadena hexadecimal y la imprime |               
+| ft_strlen                       | Devuelve la longitud de la cadena          |
+| ft_pf_putchar                   | Imprime un caracter y aumenta el resultado |
+| ft_pf_putstr                    | Imprime una cadena y aumenta el resultado por la longitud de la cadena |
+| ft_pf_pointer                   | Convierte un puntero a una cadena hexadecimal y la imprime |               
 
