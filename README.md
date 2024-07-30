@@ -22,10 +22,18 @@ Una vez realizada su corrección y validación, podremos usar esta función para
 
 ## Lista de funciones utilizadas de proyecto libft
 
-|      Funciones de libft         |      Funciones de libft                    |
+|      Funciones de libft         |      Explicación                           |
 | :-----------------------------: | :-----------------------------:            | 
 | ft_strlen                       | Devuelve la longitud de la cadena          |
 | ft_pf_putchar                   | Imprime un caracter y aumenta el resultado |
 | ft_pf_putstr                    | Imprime una cadena y aumenta el resultado por la longitud de la cadena |
 | ft_pf_pointer                   | Convierte un puntero a una cadena hexadecimal y la imprime |               
 
+## Lista de macros utilizadas
+
+|     Macros                      |     Explicación                                          |
+| :-----------------------------: | :-----------------------------:                          | 
+| write                           | Los bytes indicados del bufger serán escritos en el file |
+| va_start                        | Permite acceso a los argumentos de la función variada    |
+| va_arg                          | Accede al argumento de la función variada                |
+| va_copy                         | Hace una copia de los argumentos de la función variática |               
