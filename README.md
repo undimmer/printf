@@ -1,6 +1,6 @@
 <h1 align="center"><img src="BannerPrintf.gif" alt="Profile banner"/></h1>
 
-En el proyecto ft_printf se nos presenta el trabajo de realizar la función Printf de la biblioteca de C. Aprenderemos la implementación de funciones variáticas. 
+En el proyecto ft_printf se nos presenta el trabajo de realizar la función Printf de la biblioteca de , en la cuál se aprenderá el uso de cadenas de carácteres y la implementación de funciones variáticas. 
 Una vez realizada su corrección y validación, podremos usar esta función para el resto de proyectos del Cursus. 
 
 
@@ -19,3 +19,14 @@ Una vez realizada su corrección y validación, podremos usar esta función para
         </tr>
     </tbody>
 </table>
+
+## Lista de funciones utilizadas de proyecto libft
+
+|     Funcion Printf     |      Funciones de libft     |
+| :-----------------------: | :-----------------------------: 
+| [ft_printf](ft_printf.c)  | [ft_putchar](libft/ft_putchar_fd.c) |
+|                           | [ft_putstr](libft/ft_putstr_fd.c)   |
+|                           | [ft_putnbr](libft/ft_putnbr_fd.c)   |
+|                           | [ft_uputnbr](libft/ft_uputnbr.c)   |
+|                           | [ft_hexa](libft/ft_hexa.c)   |
+|                           | [ft_ptr](libft/ft_ptr.c)   |
