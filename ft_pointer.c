@@ -28,7 +28,7 @@ static int      ft_pf_pointer(unsigned long long n)
         return (i);
 }
 
-int     ft_pf_pointer_zero(unsigned long int n)
+int     ft_pf_pointer_zero(unsigned long long n)
 {
         int     i;
 
