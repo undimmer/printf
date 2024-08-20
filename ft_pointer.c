@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-static int      ft_pf_pointer(unsigned long int n)
+static int      ft_pf_pointer(unsigned long long n)
 {
         int             i;
         char    *str;
@@ -20,12 +20,30 @@ static int      ft_pf_pointer(unsigned long int n)
         i = 0;
         str = "0123456789abcdef";
         if (n >= 16)
-                i += ft_pf_pointer(n / 16);
-        i += ft_pf_putchar(str[n] % 16);
+		{
+			i += ft_pf_pointer(n / 16);
+			i += ft_pf_pointer(n % 16);
+        }
+		else
+			i += ft_pf_putchar(str[n]);
         return (i);
 }
 
-int     ft_pf_pointer_zero(unsigned long int n)
+int     ft_putnbr_unsigned(unsigned int n, char *str)
+{
+        int  i;
+
+        i = 0;
+        if (n >= 16) {
+                i += ft_putnbr_unsigned(n / 16, str);
+                i += ft_putnbr_unsigned(n % 16, str);
+        } else {
+                i += ft_pf_putchar(str[n]);
+        }
+        return (i);
+}
+
+int     ft_pf_pointer_zero(unsigned long long n)
 {
         int     i;
 

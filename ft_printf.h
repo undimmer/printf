@@ -24,8 +24,9 @@ int                     ft_pf_putchar(int c);
 int                     ft_pf_putstr(char *s);
 int                     ft_pf_putnbr_base(int n);
 int                     ft_pf_putnbr_base_u(unsigned n);
-int                     ft_pf_pointer_zero(unsigned long int n);
+int                     ft_pf_pointer_zero(unsigned long long n);
 int                     ft_printf(char const *str, ...);
 int                     select_format(va_list arg, char c);
+int                     ft_putnbr_unsigned(unsigned int n, char *str);
 
 #endif
