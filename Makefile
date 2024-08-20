@@ -14,10 +14,10 @@ NAME    = libftprintf.a
 INCLUDE = ft_printf.h
 
 SRC     =       ft_printf.c \
-                        ft_putchar.c \
-                        ft_putstr.c \
-                        ft_putnbr.c \
-                        ft_pointer.c \
+						ft_putchar.c \
+						ft_putstr.c \
+						ft_putnbr.c \
+						ft_pointer.c
 OBJ             =       ${SRC:.c=.o}
 
 CC              =       gcc
@@ -26,18 +26,18 @@ RM              =       rm -rf
 AR              =       ar rcs
 
 .c.o:
-        $(CC) $(CFLAGS) -c $< -o ${<:.c=.o}
+		$(CC) $(CFLAGS) -c $< -o ${<:.c=.o}
 
 $(NAME): $(OBJ)
-        $(AR) $(NAME) $(OBJ)
+		$(AR) $(NAME) $(OBJ)
 
 all: $(NAME)
 
 clean:
-        $(RM) $(OBJ)
+		$(RM) $(OBJ)
 
 fclean: clean
-        $(RM) $(NAME)
+		$(RM) $(NAME)
 
 re:             fclean all
 
