@@ -23,15 +23,15 @@ int     select_format(va_list arg, char c)
         else if (c == 's')
                 i += ft_pf_putstr(va_arg(arg, char *));
         else if (c == 'p')
-                i += ft_pf_pointer_zero(va_arg(arg, unsigned long int));
-        else if (c == 'd')
+                i += ft_pf_pointer_zero((unsigned long long)va_arg(arg, void *));
+        else if (c == 'd' || c == 'i')
                 i += ft_pf_putnbr_base(va_arg(arg, int));
         else if (c == 'u')
                 i += ft_pf_putnbr_base_u(va_arg(arg, unsigned));
         else if (c == 'x')
-                i += ft_pf_putnbr_base(va_arg(arg, int));
+                i += ft_putnbr_unsigned(va_arg(arg, int), "0123456789abcdef");
         else if (c == 'X')
-                i += ft_pf_putnbr_base(va_arg(arg, int));
+                i += ft_putnbr_unsigned(va_arg(arg, int), "0123456789ABCDEF");
         else
                 i += ft_pf_putchar(c);
         return (i);
@@ -48,9 +48,11 @@ int     ft_printf(char const *str, ...)
         va_start(arg, str);
         while (str[i])
         {
-                if (str[i] == '%')
+                if (str[i] == '%' && str[i + 1]) {
                         contador += select_format(arg, str[i + 1]);
-                else
+                        i++;
+                }
+				else
                         contador += ft_pf_putchar(str[i]);
                 i++;
         }
