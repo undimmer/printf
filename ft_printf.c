@@ -24,7 +24,7 @@ int     select_format(va_list arg, char c)
                 i += ft_pf_putstr(va_arg(arg, char *));
         else if (c == 'p')
                 i += ft_pf_pointer_zero(va_arg(arg, unsigned long int));
-        else if (c == 'd')
+        else if (c == 'd' || c == 'i')
                 i += ft_pf_putnbr_base(va_arg(arg, int));
         else if (c == 'u')
                 i += ft_pf_putnbr_base_u(va_arg(arg, unsigned));
