@@ -29,9 +29,9 @@ int     select_format(va_list arg, char c)
         else if (c == 'u')
                 i += ft_pf_putnbr_base_u(va_arg(arg, unsigned));
         else if (c == 'x')
-                i += ft_pf_putnbr_base(va_arg(arg, int));
+                i += ft_pf_putnbr_unsigned(va_arg(arg, int), "0123456789abcdef");
         else if (c == 'X')
-                i += ft_pf_putnbr_base(va_arg(arg, int));
+                i += ft_pf_putnbr_base_unsigned(va_arg(arg, int), "012345789ABCDEF");
         else
                 i += ft_pf_putchar(c);
         return (i);
