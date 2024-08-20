@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "ft_printf.h"
+
 int     ft_pf_putnbr_base(int n)
 {
         int                     i;
@@ -37,10 +39,10 @@ int     ft_pf_putnbr_base_u(unsigned n)
 
         i = 0;
 
-        if (nbr / 10)
+        if (n / 10)
         {
-                i += ft_pf_putnbr_base_u(nbr / 10);
+                i += ft_pf_putnbr_base_u(n / 10);
         }
-        i += ft_pf_putchar(nbr % 10 + '0');
+        i += ft_pf_putchar(n % 10 + '0');
         return (i);
 }
