@@ -12,16 +12,19 @@
 
 #include "ft_printf.h"
 
-static int      ft_pf_pointer(unsigned long int n)
+static int      ft_pf_pointer(unsigned long long n)
 {
         int             i;
         char    *str;
 
         i = 0;
         str = "0123456789abcdef";
-        if (n >= 16)
+        if (n >= 16) {
                 i += ft_pf_pointer(n / 16);
-        i += ft_pf_putchar(str[n] % 16);
+                i += ft_pf_putchar(str % 16);
+        } else {
+                i += ft_pf_putchar(str[n]);
+        }
         return (i);
 }
 
